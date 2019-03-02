@@ -30,15 +30,31 @@ def write_overall(strategies, filepath):
 
 def write_matchups(games, filepath):
     f = open("matchup_results.csv", 'w')
-    f.write("name1, name2, score1, score2\n")
+    f.write("game_num, name, score, player\n")
     for game in games:        
-        f.write("{},{},{},{}\n".format(game.name1, game.name2, game.score1, game.score2))
+        f.write("{},{},{}, 1\n".format(game.game_num, game.name1, game.score1))
+        f.write("{},{},{}, 2\n".format(game.game_num, game.name2, game.score2))
     f.close()
     
     copyfile("matchup_results.csv", filepath + "/matchup_results.csv")
+
+def write_history(games, filepath):
+    game = games[0]
+    f = open("game_history.csv", 'w')
+    f.write("round, player, move\n")
+    for i in range(len(game.history)):
+        moves = game.history[i][0]
+        f.write("{},{},{}\n".format(i+1, game.name1, game.move_namer(moves[0])))
+        f.write("{},{},{}\n".format(i+1, game.name2, game.move_namer(moves[1])))
+    f.close()
+    
+    copyfile("game_history.csv", filepath + "/game_history.csv")
+        
+
     
 def write_results(strategies, games):
     filepath = generate_dirname()
     os.mkdir(filepath)
     write_overall(strategies, filepath)
     write_matchups(games, filepath)
+    write_history(games, filepath)

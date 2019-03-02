@@ -5,8 +5,11 @@ ipd = read_csv("overall_results.csv")
 match = read_csv("matchup_results.csv")
 
 ggplot(data=ipd) +
-  geom_col(mapping = aes(x = name, y = score))
-ggsave(filename = "test.pdf")
+  geom_col(mapping = aes(x = name, y = score, fill = name)) + theme(legend.position="none")
+ggsave(filename = "overall_scores.pdf")
 
-#ggplot(data=match) + facet_wrap(~ name1 + name2) + geom_col(mapping = aes(x = name1, y = score1)) + geom_col(mapping = aes(x = name2, y = score2))
+ggplot(data=match) + facet_wrap(~ game_num) + geom_col(mapping = aes(x = player, fill = name, y = score)) + 
+  geom_text(aes(x = player, y = 0, label = name, vjust=-0.25)) +
+  theme(axis.title.x=element_blank(), axis.text.x=element_blank(), axis.ticks.x=element_blank(), legend.position = "none")
+ggsave(filename = "matchups.pdf")  
   

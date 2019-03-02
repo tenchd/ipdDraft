@@ -47,4 +47,4 @@ if __name__ == '__main__':
     submissions = [d.randomSubmission, d.tftSubmission, d.alternatorSubmission,
                    d.acSubmission, d.adSubmission]
            
-    tournament(submissions, 10)
+    tournament(submissions, 20)
