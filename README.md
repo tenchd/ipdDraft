@@ -43,4 +43,4 @@ If you have ideas be sure to let me know!
 
 ## How to Write a Submission
 
-If you want to test out a strategy, add it as a Submission object in the deciders.py file, then add that submission object to the list of submissions in the main function of ipd.py.  Then run ipd.py.
+If you want to test out a strategy, add it as a Submission object in the deciders.py file (which also contains examples you can start from), then add that submission object to the list of submissions in the main function of ipd.py.  Then run ipd.py.
