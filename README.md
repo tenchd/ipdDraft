@@ -28,6 +28,8 @@ Each pair of user submissions will compete in an IPD game with standard payoffs,
 
 4. If you want to use packages/libraries that don't come standard with Python 3.7, let me know so I can makes sure to have them set up before the tournament.
 
+5. Please don't share your submissions with other participants before the competition if you can avoid it.  It'll be more interesting if everyone is coming in blind.
+
 ### Submitting
 
 At the moment I'm just planning to have people email me submissions at dtench@protonmail.ch.  Put "IPDSUBMISSION" in the subject line please.  Format for submissions TBD.
