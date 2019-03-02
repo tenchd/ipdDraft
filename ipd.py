@@ -3,7 +3,7 @@
 """
 Created on Mon Feb 25 17:13:59 2019
 
-@author: devd
+@author: David Tench
 """
 
 import deciders as d

@@ -3,7 +3,7 @@
 """
 Created on Mon Feb 25 23:06:53 2019
 
-@author: devd
+@author: David Tench
 """
 
 import random as rand

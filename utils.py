@@ -3,7 +3,7 @@
 """
 Created on Fri Mar  1 12:47:37 2019
 
-@author: devd
+@author: David Tench
 """
 
 import time as t
