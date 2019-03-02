@@ -8,11 +8,7 @@ Created on Mon Feb 25 17:13:59 2019
 
 import deciders as d
 from classes import Strategy, Game
-import utils as u
-import sys
-
-C = 0
-D = 1
+from utils import write_results
 
 
 def tournament(submissions, num_rounds):
@@ -33,7 +29,7 @@ def tournament(submissions, num_rounds):
     
     for strat in strategies:
         print("Final score for {} submitted by {} is {}".format(strat.name, strat.author, strat.score))
-    u.write_results(strategies, games)
+    write_results(strategies, games)
             
         
 if __name__ == '__main__': 

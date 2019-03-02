@@ -6,8 +6,8 @@ Created on Fri Mar  1 12:52:23 2019
 @author: David Tench
 """
 
-import deciders as d
-
+#encode "Cooperate" actions as C and "Defect" actions as D.  This convention
+#holds for the actions that deciders return, as well as history entries.
 C = 0
 D = 1
 
