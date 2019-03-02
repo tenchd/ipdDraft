@@ -8,4 +8,4 @@ If you want to test out a strategy, add it as a Submission object in the decider
 
 ## Visualization
 
-Users who have access to a bash terminal and have R installed can run play_n_plot.sh to run a dummy tournament and generate charts summarizing the results.  Requires installation of tidyverse package for R.
+Users who have access to a bash terminal and have R installed can run play_n_plot.sh to run a dummy tournament and generate charts summarizing the results as seen in the sample_charts directory.  Requires installation of tidyverse package for R.
