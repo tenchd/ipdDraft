@@ -1,4 +1,4 @@
-# ipdDraft
+# ipdTournament
 
 ## Introduction
 
