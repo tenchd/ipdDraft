@@ -7,3 +7,4 @@ rm Rplots.pdf
 rm overall_results.csv
 rm matchup_results.csv
 rm game_history.csv
+echo "hi"
