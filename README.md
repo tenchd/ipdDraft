@@ -26,9 +26,13 @@ Each pair of user submissions will compete in an IPD game with standard payoffs,
 
 3. There is currently no limit on the number of entries any person can submit.  This rule may be subject to change based on how many submissions I get (I may impose a limit on submissions/person, or prevent a submitter's multiple strategies from playing against each other).
 
+4. If you want to use packages/libraries that don't come standard with Python 3.7, let me know so I can makes sure to have them set up before the tournament.
+
 ### Submitting
 
 At the moment I'm just planning to have people email me submissions at dtench@protonmail.ch.  Put "IPDSUBMISSION" in the subject line please.  Format for submissions TBD.
+
+In the meantime, email me to be added to an email list for announcements.
 
 Deadline for submissions (and therefore the tournament date itself) TBD.
 
@@ -44,3 +48,7 @@ If you have ideas be sure to let me know!
 ## How to Write a Submission
 
 If you want to test out a strategy, add it as a Submission object in the deciders.py file (which also contains examples you can start from), then add that submission object to the list of submissions in the main function of ipd.py.  Then run ipd.py.
+
+## Visualization
+
+Users who have access to a bash terminal and have R installed can run play_n_plot.sh to run a dummy tournament and generate charts summarizing the results.  Requires installation of tidyverse package for R.
