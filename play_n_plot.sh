@@ -3,3 +3,5 @@
 python ipd.py
 Rscript plot_tournament_results.R
 rm Rplots.pdf
+#rm overall_results.csv
+#rm matchup_results.csv
