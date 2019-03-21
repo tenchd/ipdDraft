@@ -4,7 +4,9 @@ For an overview of this project and the tournament, read the [wiki](https://gith
 
 ## How to Write a Submission
 
-If you want to test out a strategy, add it as a Submission object in the deciders.py file (which also contains examples you can start from), then add that submission object to the list of submissions in the main function of ipd.py.  Then run ipd.py.
+Make a copy of example_submission.py and use it as a template to create your own decider.  example_submission.py has detailed instructions in its comments.  You can email your modified copy of this template to me to enter it in the tournament (please rename the file!).
+
+If you want to test your creation against some simple strategies, import your submission in ipd.py and add your submission object to the list of submissions in the main function of ipd.py.  Then run ipd.py.
 
 ## Visualization
 
