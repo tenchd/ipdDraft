@@ -39,7 +39,7 @@ def write_matchups(games, filepath):
     copyfile("matchup_results.csv", filepath + "/matchup_results.csv")
 
 def write_history(games, filepath):
-    game = games[0]
+    game = games[4]
     f = open("game_history.csv", 'w')
     f.write("round, player, move\n")
     for i in range(len(game.history)):
